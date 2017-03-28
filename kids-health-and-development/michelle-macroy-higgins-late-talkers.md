@@ -1,3 +1,10 @@
+---
+layout: post
+category : kids-health-and-development
+tagline: "Supporting tagline"
+tags : [kids, age1, health, development]
+---
+{% include JB/setup %}
 
 Whoever said children should be seen and not heard was most certainly not a parent of a child whose speech was delayed. Because dealing with a late talker — in this case, a toddler who has a solid grasp of language as well as typical cognitive, social, vision, and hearing development but a limited spoken or expressive vocabulary — is a stressful experience for even the most optimistic parents.
 
