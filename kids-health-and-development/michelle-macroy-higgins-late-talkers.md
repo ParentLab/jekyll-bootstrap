@@ -1,5 +1,4 @@
 
-=========================
 Whoever said children should be seen and not heard was most certainly not a parent of a child whose speech was delayed. Because dealing with a late talker — in this case, a toddler who has a solid grasp of language as well as typical cognitive, social, vision, and hearing development but a limited spoken or expressive vocabulary — is a stressful experience for even the most optimistic parents.
 
 But according to Dr. Michelle MacRoy-Higgins, it doesn’t have to be. A speech-language pathologist and co-author of Time To Talk: What You Need to Know About Your Child’s Speech and Language Development she says that, while late talkers demand attention, a speech delay doesn’t indicate disaster. “I don’t want parents to think that if their child is a late talker that he or she is doomed because it’s very common,” says MacRoy-Higgins. “In fact, it’s estimated that about 15 percent of toddlers are late talkers.”
