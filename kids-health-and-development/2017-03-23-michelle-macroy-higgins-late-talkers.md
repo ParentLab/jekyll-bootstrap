@@ -1,5 +1,4 @@
 ---
-layout: post
 category : kids-health-and-development
 tagline: "Supporting tagline"
 tags : [kids, age1, health, development]
