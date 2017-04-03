@@ -70,7 +70,8 @@ $topbar-menu-link-color: $white !default;
 $topbar-menu-icon-color: $white !default;
 $topbar-menu-link-color-toggled: $jumbo !default;
 $topbar-menu-icon-color-toggled: $jumbo !default;
-$topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon
+// $topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon
+$topbar-menu-icon-position: $default-float !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
@@ -201,7 +202,10 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         height: $topbar-height;
         margin: 0;
         font-size: $rem-base;
-        // @if $topbar-menu-icon-position == $default-float {float: $opposite-direction;}
+
+        @if $topbar-menu-icon-position == $default-float {
+          float: $opposite-direction;
+        }
 
         h1, h2, h3, h4, p, span {
           line-height: $topbar-height;

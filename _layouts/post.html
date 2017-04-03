@@ -6,7 +6,11 @@ layout: blog
 <div class='mod modBlogPost big no_bg'>
   <div class='images'>
     {% for image in page.images %}
-      <div class='image'><img alt="" src="{{ image | prepend:site.baseurl | prepend:site.url }}" /></div>
+      {% if image contains 'http' %}
+        <div class='image'><img alt="" src="{{image}}" /></div>
+      {% else %}
+        <div class='image'><img alt="" src="{{image | absolute_url }}" /></div>
+      {% endif %}
     {% endfor %}
   </div>
   <div class='content'>
@@ -21,7 +25,7 @@ layout: blog
       <span>
         In
         {% for cat in page.categories %}
-          <a href="#">{{cat}}</a>
+          <a href="{{ cat | prepend:"/categories/" | absolute_url  }}">{{cat}}</a>
           {% unless forloop.last %}
               ,
           {% endunless %}
@@ -29,7 +33,7 @@ layout: blog
       </span>
       /
       <span>
-        <a href="#">4 commetns</a>
+        <a href="#disqus_thread">Loading comments ....</a>
       </span>
     </p>
     <h3><a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></h3>
@@ -40,26 +44,8 @@ layout: blog
 <a id='comments'></a>
 {% include comments.html %}
 <div class='four spacing'></div>
-<div id='comment-form'>
-  <h3>Your comment</h3>
-  <form accept-charset='UTF-8' action='#' method='post'>
-    <p class='name'>
-      <label for='name'>Your Name</label>
-      <input class='input-text required' id='name' name='name' type='text'>
-    </p>
-    <p class='email'>
-      <label for='email'>Your Email</label>
-      <input class='input-text required' id='email' name='email' type='text'>
-    </p>
-    <p class='message'>
-      <label for='message'>Your Message</label>
-      <textarea class='required' cols='80' id='message' name='message' rows='5'></textarea>
-    </p>
-    <div class='spacing'></div>
-    <p>
-      <input class='button' type='submit' value='Send Message'>
-    </p>
-  </form>
-</div>
 <div class='four spacing'></div>
-
+<script id="dsq-count-scr" src="//parentlab.disqus.com/count.js" async></script>
+<script type="text/javascript">
+  mixpanel.track("post view");
+</script>
