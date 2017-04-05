@@ -27,12 +27,12 @@
         {% endfor %}
       </span>
     </p>
-    <h3><a href="{{post.url}}">{{include.post.title}}</a></h3>
+    <h3><a href="{{post.url | absolute_url }}">{{include.post.title}}</a></h3>
     <p>{{include.post.excerpt}}</p>
     <div class='spacing'></div>
 
     <div class="callout clearfix">
-      <a class="button small right" href="{{include.post.url}}">Read more</a>
+      <a class="button small right" href="{{include.post.url  | absolute_url }}">Read more</a>
     </div>
   </div>
 </div>
