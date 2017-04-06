@@ -4,7 +4,8 @@ title:  "The Process of Adoption"
 date:   2015-05-02 10:20:06
 categories: adoption
 author: Stephen Ravel
-images: https://1ehukb3kd764oddub3rdo4uw-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Baby_Brezza_Fatherly.jpg
+image: https://1ehukb3kd764oddub3rdo4uw-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/Baby_Brezza_Fatherly.jpg
+thumbnail: https://1ehukb3kd764oddub3rdo4uw-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/swapbots-AR-toy-500x400.jpg
 excerpt: There are lots of different choices to be made in adoption, including which of the many types of adoption you are interested in pursuing. Broad options include domestic adoption, international adoption, and open adoption. The best way to start is to contact an agency licensed in your state to complete your adoption home study and to ask questions. Meet with multiple agencies as choosing the right agency for your family will make a big difference in your adoption journey.
 ---
 

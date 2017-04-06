@@ -1,12 +1,10 @@
 <div class='big mod modBlogPost no_bg'>
   <div class='images'>
-    {% for image in include.post.images %}
-      {% if image contains 'http' %}
-        <div class='image'><img alt="" src="{{image}}" /></div>
-      {% else %}
-        <div class='image'><img alt="" src="{{site.url}}/{{image}}" /></div>
-      {% endif %}
-    {% endfor %}
+    {% if include.post.image contains 'http' %}
+      <div class='image'><img alt="" src="{{include.post.image}}" /></div>
+    {% else %}
+      <div class='image'><img alt="" src="{{site.url}}/{{include.post.image}}" /></div>
+    {% endif %}
   </div>
   <div class='content'>
     <p class='info'>

@@ -8,14 +8,31 @@
 </div>
 <div class='links'>
   <h3>Recent Posts</h3>
-  <ul>
+    <ul>
     {% for post in site.posts %}
       {% if forloop.index > 6 %}
         {% break %}
       {% endif %}
-      <li><a href="{{post.url | prepend:site.baseurl }}">{{post.title | capitalize}}</a></li>
+
+      <li>
+      <a class="th" href="{{post.url | prepend:site.baseurl }}">
+          <div class="row">
+            <div class="columns small-5 large-5">
+              <div class="thumbnail">
+                {% if post.thumbnail contains 'http' %}
+                  <div class=''><img alt="" src="{{post.thumbnail}}" /></div>
+                {% else %}
+                  <div class=''><img alt="" src="{{site.url}}/{{post.thumbnail}}" /></div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="columns small-7 large-7" style="padding-left: 0; padding-right: 15px;">
+              <p style="margin-bottom: 0; font-size: 1rem;">{{post.title}}</p>
+            </div>
+          </div>
+      </a>
+      </li>
     {% endfor %}
-  </ul>
 </div>
 <div class='links'>
   <h3>Tags</h3>
